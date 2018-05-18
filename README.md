@@ -32,9 +32,6 @@ To run the source code, "Phileas Trip_Source", in addition to the above, install
     * Locate the correct link on the page, listed under "Selenium Client & WebDriver Language Bindings" and in line with "Java"
     * Click Download
     * Unzip the contents, the jar files will be imported into eclipse.
-* TestNG
-  * Note: this is packaged in the source code
-  * Instructions to install are listed in usage section
 
 Note: 
 * The links are suggestions, you may use your own source
@@ -63,15 +60,6 @@ Importing Selenium files:
  * Click Add External JARs again
  * Select the JAR files outside the lib folder too and click Open
  * Click Apply and Close
- 
-Installing TestNG:
- * Inside eclipse, click help
- * Click eclipse marketplace
- * In the find window, type testng
- * Click on the magnfiying glass to begin the search
- * Look for "TestNG for Eclipse" and click install
- * Follow the on screen instructions; default settings are okay and simply agree to everything
- * Eclipse will need to restart after installing
 
 Contributions:
 Thanks goes to https://www.guru99.com/ for their great tutorials!
