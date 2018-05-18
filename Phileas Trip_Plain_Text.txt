@@ -1,0 +1,47 @@
+package PhileasTrip;
+
+//import required components of selenium
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+//chrome is used for this implementation
+import org.openqa.selenium.chrome.ChromeDriver;
+
+class PhileasTrip {
+	public static void main(String[] args) {
+		//use chrome driver; update file path of driver if different
+		System.setProperty("webdriver.chrome.driver","C:\\eclipse-workspace\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+    	
+		//URL to open, NSW's trip planner
+        String TripPlannerURL = "https://transportnsw.info/trip/";
+        //open above URL in browser
+        driver.get(TripPlannerURL);
+        
+        //Locate the relevant elements on the page by ID
+        WebElement FromInput = driver.findElement(By.id("search-input-From"));
+        WebElement ToInput = driver.findElement(By.id("search-input-To"));
+        WebElement SearchButton = driver.findElement(By.id("search-button"));
+        
+        //Fill in the From and To fields with the correct locations
+        FromInput.sendKeys("North Sydney Station");
+        ToInput.sendKeys("Town Hall Station");
+        
+        //Wait until browser has properly filled the To field; noted by the suggested location appearing
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("suggestions-To")));
+        
+        //Start the search
+        ToInput.sendKeys(Keys.RETURN);
+        
+        //Checks if results were returned, reports results in console if available
+        if (driver.findElements( By.id("tp-result-list") ).size() != 0){
+            System.out.println("Results Found");
+        } else {
+            System.out.println("No Results Found");
+        }
+    }
+}
