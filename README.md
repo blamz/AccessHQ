@@ -28,10 +28,13 @@ To run the source code, "Phileas Trip_Source", in addition to the above, install
   * Click on the chromedriver for your operating system to download
   * Unzip the contents, the executable will be referenced in eclipse
 *	Selenium WebDriver for Java 3.12.0 - https://www.seleniumhq.org/download/
-  * Note: this is packaged in the source code, but included as a matter of records
+  * Note: this is packaged in the source code
   * Locate the correct link on the page, listed under "Selenium Client & WebDriver Language Bindings" and in line with "Java"
   * Click Download
   * Unzip the contents, the jar files will be imported into eclipse.
+* TestNG
+ * Note: this is packaged in the source code
+ * Instructions to install are listed in usage section
 
 Note: 
 * The links are suggestions, you may use your own source
@@ -47,6 +50,28 @@ Source code:
 * Use eclipse to open "Phileas Trip_Source.jar"
 * Update the file path in code to point to the current location of chrome driver on your system
 * Click run in eclipse and observe the results.
+
+Importing Selenium files:
+* If the packaged files in the source code do not work, then follow these steps:
+ * With the project open in eclipse, right click on the "PhileasTrip" project in the package explorer window
+ * Click properties
+ * Click Java Build Path
+ * Click Classpath
+ * Click Add External JARs
+ * Navigate to the Selenium files on your system
+ * Select all JAR files in the libs folder and click Open
+ * Click Add External JARs again
+ * Select the JAR files outside the lib folder too and click Open
+ * Click Apply and Close
+ 
+Installing TestNG:
+ * Inside eclipse, click help
+ * Click eclipse marketplace
+ * In the find window, type testng
+ * Click on the magnfiying glass to begin the search
+ * Look for "TestNG for Eclipse" and click install
+ * Follow the on screen instructions; default settings are okay and simply agree to everything
+ * Eclipse will need to restart after installing
 
 Contributions:
 Thanks goes to https://www.guru99.com/ for their great tutorials!
