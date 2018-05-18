@@ -16,7 +16,7 @@ To run the base program, "Phileas Trip.jar", install the following:
   * Click on the JDK that corresponds to your OS to download
   * Run the executable and follow the onscreen instructions, the default settings are okay
   * Note: if the above JDK is not compatible with your machine, e.g. 32 bit machine, you may find and use another version
-*  Google Chrome - https://www.google.com.au/chrome/
+* Google Chrome - https://www.google.com.au/chrome/
   * Click download Chrome
   * Run the executable and follow the onscreen, the default settings are okay.
 
@@ -25,16 +25,16 @@ To run the source code, "Phileas Trip_Source", in addition to the above, install
   * Click Download
   * Unzip the contents, eclipse is ready to run directly
 *	Google Chrome Driver 2.38 - https://chromedriver.storage.googleapis.com/index.html?path=2.38/
-  * Click on the chromedriver for your operating system to download
-  * Unzip the contents, the executable will be referenced in eclipse
+    * Click on the chromedriver for your operating system to download
+    * Unzip the contents, the executable will be referenced in eclipse
 *	Selenium WebDriver for Java 3.12.0 - https://www.seleniumhq.org/download/
-  * Note: this is packaged in the source code
-  * Locate the correct link on the page, listed under "Selenium Client & WebDriver Language Bindings" and in line with "Java"
-  * Click Download
-  * Unzip the contents, the jar files will be imported into eclipse.
+    * Note: this is packaged in the source code
+    * Locate the correct link on the page, listed under "Selenium Client & WebDriver Language Bindings" and in line with "Java"
+    * Click Download
+    * Unzip the contents, the jar files will be imported into eclipse.
 * TestNG
- * Note: this is packaged in the source code
- * Instructions to install are listed in usage section
+  * Note: this is packaged in the source code
+  * Instructions to install are listed in usage section
 
 Note: 
 * The links are suggestions, you may use your own source
