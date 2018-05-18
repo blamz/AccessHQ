@@ -82,3 +82,4 @@ Licenses:
 * Eclipse license: http://www.eclipse.org/legal/epl-2.0/
 * Selenium license (Apache 2.0 License): https://www.seleniumhq.org/about/license.jsp
 * ChromeDriver - no licensing information: https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver
+* TestNG license (Apache 2.0 License): http://www.apache.org/licenses/LICENSE-2.0
