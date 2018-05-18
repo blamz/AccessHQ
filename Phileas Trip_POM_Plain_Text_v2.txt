@@ -1,0 +1,45 @@
+package PhileasTrip;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class PhileasTripPOM {
+	WebDriver driver;
+	//Locate the from field, to field, to suggestion plus search button by ID
+	By fromField = By.id("search-input-From");
+	By toField = By.id("search-input-To");
+	By toSuggestion = By.id("suggestions-To");
+	By searchButton = By.id("search-button");
+	
+	public PhileasTripPOM(WebDriver driver) {
+		this.driver = driver;
+	}
+	
+	//Fills the from field
+	public void setFromLocation(String fromString) {
+		driver.findElement(fromField).sendKeys(fromString);
+	}
+	
+	//Fills the to field
+	public void setToLocation(String toString) {
+		driver.findElement(toField).sendKeys(toString);
+	}
+	
+	//Clicks the search
+	public void clickSearch() {
+        //Wait until browser has properly filled the To field; noted by the suggested location appearing
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(toSuggestion));
+		driver.findElement(searchButton).click();
+	}
+	
+	//Takes values for from and to, fills them in and searches
+	public void runSearch(String fromLocation, String toLocation) {
+		this.setFromLocation(fromLocation);
+		this.setToLocation(toLocation);
+		this.clickSearch();
+	}
+}
