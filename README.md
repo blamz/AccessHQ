@@ -15,6 +15,7 @@ To run the base program, "Phileas Trip.jar", install the following:
   * Accept the License Agreement
   * Click on the JDK that corresponds to your OS to download
   * Run the executable and follow the onscreen instructions, the default settings are okay
+  * Note: if the above JDK is not compatible with your machine, e.g. 32 bit machine, you may find and use another version
 *  Google Chrome - https://www.google.com.au/chrome/
   * Click download Chrome
   * Run the executable and follow the onscreen, the default settings are okay.
